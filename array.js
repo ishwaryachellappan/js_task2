@@ -1,18 +1,23 @@
-var a = [1, 2, 3, 4, 5];
-for ( var i = 0; i < a.length;i++)
+var inputArray = [];
+var size = 5; //Maximum Array size
+
+for(var i=0; i<size; i++) {
+	
+	//Taking Input from user
+	inputArray[i] = prompt('Enter Element ' + (i+1));
+}
+
+for ( var i = 0; i < inputArray.length;i++)
    {
-      a[i] = a[i]*a[i]*a[i];
+      inputArray[i] = inputArray[i]*inputArray[i]*inputArray[i];
    } 
     
-    // Getting sum of numbers
-   // Getting sum of numbers
-    var product= a.reduce(function(a, b){
-        return a * b;
-    }, 1);
-    
-    console.log(product);
   
-  if("a =! 0"){
+    var product= inputArray.reduce(function(a, b){
+        return a * b;
+    }, 1);{
+  
+    if("inputArray=! 0"){
 console.log(product);
 }
 
@@ -20,4 +25,4 @@ console.log(product);
 else{
   alert( 'Array is Null' );
 }
-  
+    }
